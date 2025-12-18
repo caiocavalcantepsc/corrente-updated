@@ -685,245 +685,938 @@ img {
 /* ============================================
    KIDS SECTION
    ============================================ */
-.kids {
-    background: var(--dark-bg);
-}
 
-.kids-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 50px 0;
-}
-
-.gallery-item {
-    border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    position: relative;
-    height: 250px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-slow);
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.benefits-section {
+.kids-hero {
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
+        url('kids-bg.jpg') center/cover no-repeat;
+    padding: 120px 0 80px;
+    text-align: center;
     margin-top: 80px;
+    position: relative;
 }
 
-.benefits-title {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 50px;
-    color: white;
-}
-
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-}
-
-.benefit-card {
-    background: var(--dark-card);
-    padding: 40px 30px;
-    border-radius: var(--border-radius-lg);
-    text-align: center;
-    border: 1px solid var(--dark-border);
-    transition: var(--transition-normal);
-}
-
-.benefit-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-color);
-    box-shadow: var(--shadow-md);
-}
-
-.benefit-icon {
-    width: 70px;
-    height: 70px;
-    background: rgba(255, 215, 0, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-}
-
-.benefit-icon i {
-    font-size: 2rem;
-    color: var(--gold);
-}
-
-.benefit-card h4 {
-    font-size: 1.2rem;
+.kids-hero-content h1 {
+    font-size: 3.5rem;
     margin-bottom: 15px;
     color: white;
 }
 
-.benefit-card p {
+.kids-hero-subtitle {
+    font-size: 1.5rem;
+    color: var(--gold);
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.kids-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.kids-stat {
+    text-align: center;
+}
+
+.kids-stat .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--gold);
+    margin-bottom: 5px;
+}
+
+.kids-stat .stat-label {
+    font-size: 0.9rem;
     color: var(--muted-text);
-    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.kids-filosofia {
+    padding: 80px 0;
+    background: var(--dark-card);
+}
+
+.kids-filosofia-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.kids-filosofia-text h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.kids-filosofia-text>p {
+    font-size: 1.1rem;
+    color: var(--muted-text);
+    margin-bottom: 40px;
     line-height: 1.6;
 }
 
-/* ============================================
-   UNIDADES SECTION
-   ============================================ */
-.unidades {
-    background: var(--dark-card);
-}
-
-.unidades-grid {
+.kids-missao {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    margin-bottom: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
-.unidade-card {
+.missao-item {
     background: var(--dark-bg);
+    padding: 25px;
     border-radius: var(--border-radius-lg);
-    overflow: hidden;
-    transition: var(--transition-normal);
+    text-align: center;
     border: 1px solid var(--dark-border);
-}
-
-.unidade-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
-}
-
-.unidade-img {
-    position: relative;
-    height: 250px;
-    overflow: hidden;
-}
-
-.unidade-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: var(--transition-slow);
-}
-
-.unidade-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(211, 47, 47, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
     transition: var(--transition-normal);
 }
 
-.unidade-img:hover .unidade-overlay {
-    opacity: 1;
+.missao-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
 }
 
-.unidade-img:hover img {
-    transform: scale(1.1);
-}
-
-.unidade-info {
-    padding: 30px;
-}
-
-.unidade-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.missao-item i {
+    font-size: 2.5rem;
+    color: var(--gold);
     margin-bottom: 15px;
 }
 
-.unidade-header h3 {
+.missao-item h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.missao-item p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.kids-filosofia-image .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.kids-filosofia-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    transition: var(--transition-normal);
+}
+
+.kids-filosofia-image img:hover {
+    transform: scale(1.05);
+}
+
+.kids-faixas {
+    padding: 80px 0;
+    background: var(--dark-bg);
+}
+
+.kids-faixas .section-title{
+    text-align: center;
+}
+
+.faixas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.faixa-card {
+    background: var(--dark-card);
+    padding: 30px;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    border: 1px solid var(--dark-border);
+    transition: var(--transition-normal);
+}
+
+.faixa-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.faixa-color {
+    width: 100%;
+    height: 40px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.faixa-card h4 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.faixa-idade {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.faixa-habilidades {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.faixa-habilidades li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--muted-text);
+    font-size: 0.9rem;
+}
+
+.faixa-habilidades li i {
+    color: var(--primary-color);
+    margin-top: 3px;
+}
+
+.kids-unidades {
+    padding: 80px 0;
+    background: var(--dark-card);
+}
+
+.kids-unidades, .section-title,  .section-description {
+    text-align: center;
+}
+
+.kids-unidade-card {
+    background: var(--dark-bg);
+    padding: 40px;
+    border-radius: var(--border-radius-xl);
+    margin-bottom: 50px;
+    border: 1px solid var(--dark-border);
+    box-shadow: var(--shadow-md);
+}
+
+.kids-unidade-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--dark-border);
+}
+
+.kids-unidade-header h3 {
+    font-size: 1.8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+.btn-ver-unidade {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.btn-ver-unidade:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.kids-turmas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.kids-turma {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 215, 0, 0.1);
+}
+
+.turma-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.turma-titulo h4 {
     font-size: 1.3rem;
     color: white;
     margin: 0;
 }
 
-.unidade-header i {
+.turma-idade {
+    background: rgba(211, 47, 47, 0.2);
     color: var(--primary-color);
-    font-size: 1.2rem;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
-.unidade-info>p {
-    color: var(--muted-text);
-    margin-bottom: 20px;
-}
-
-.unidade-details {
+.turma-horario {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 25px;
 }
 
-.detail {
+.dia-semana {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius);
+}
+
+.dia {
+    font-weight: 600;
+    color: white;
+}
+
+.horario {
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.turma-detalhes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.turma-detalhes p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    color: var(--muted-text);
+    font-size: 0.95rem;
+}
+
+.turma-detalhes i {
+    color: var(--gold);
+}
+
+.kids-instrutor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background: rgba(211, 47, 47, 0.05);
+    border-radius: var(--border-radius-lg);
+    margin-top: 30px;
+}
+
+.instrutor-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.instrutor-avatar {
+    width: 60px;
+    height: 60px;
+    background: rgba(211, 47, 47, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px rgb(133, 0, 0) 
+}
+
+.instrutor-avatar img {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-radius: 200px;
+}
+
+.instrutor-info h5 {
+    font-size: 1.1rem;
+    color: white;
+    margin: 0 0 5px 0;
+}
+
+.instrutor-info p {
+    color: var(--muted-text);
+    /* COR AQUI */
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid var(--dark-border);
+    color: var(--muted-text);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+PÁGINA UNIDADES
+============================================ */
+
+.unidades-hero {
+    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
+        url('correntebg.png') center/cover no-repeat;
+    padding: 120px 0 80px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.unidades-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.unidades-hero-content>p {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.hero-unidades-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-unidade-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 25px;
+    background: rgba(211, 47, 47, 0.1);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    color: white;
+    transition: var(--transition-normal);
+}
+
+.hero-unidade-link:hover {
+    background: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.unidades-detalhadas {
+    padding: 80px 0;
+}
+
+.unidade-detalhada {
+    margin-bottom: 100px;
+    padding: 40px;
+    background: var(--dark-card);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.unidade-mapa-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.unidade-localizacao h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.unidade-localizacao h2 i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.unidade-endereco {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.unidade-endereco p {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--muted-text);
-    font-size: 0.9rem;
 }
 
-.detail i {
-    color: var(--primary-color);
-}
-
-.btn-unidade {
-    display: inline-block;
-    padding: 10px 25px;
+.btn-mapa {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
     background: transparent;
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     border-radius: var(--border-radius);
     font-weight: 600;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     transition: var(--transition-normal);
+    max-width: 250px;
 }
 
-.btn-unidade:hover {
+.btn-mapa:hover {
     background: var(--primary-color);
     color: white;
 }
 
-.unidades-map {
-    background: var(--dark-bg);
-    border-radius: var(--border-radius-lg);
-    padding: 40px;
-    text-align: center;
-    border: 1px solid var(--dark-border);
+.unidade-fotos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.map-placeholder {
+.foto-principal {
+    height: 300px;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+}
+
+.foto-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.foto-principal:hover img {
+    transform: scale(1.05);
+}
+
+.fotos-secundarias {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.foto-sec {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 15px;
+    border-radius: var(--border-radius);
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    color: var(--muted-text);
-    min-height: 300px;
+    gap: 10px;
+    transition: var(--transition-normal);
 }
 
-.map-placeholder i {
+.foto-sec:hover {
+    background: rgba(211, 47, 47, 0.1);
+    transform: translateY(-3px);
+}
+
+.foto-sec i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.foto-sec span {
+    font-size: 0.9rem;
+    color: var(--muted-text);
+}
+
+.unidade-turmas h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.turma-card {
+    background: var(--dark-bg);
+    padding: 30px;
+    border-radius: var(--border-radius-lg);
+    margin-bottom: 30px;
+    border: 1px solid var(--dark-border);
+}
+
+.turma-card.kids {
+    border-left: 4px solid var(--gold);
+}
+
+.turma-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.turma-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(211, 47, 47, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.turma-icon i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.turma-header h4 {
+    font-size: 1.4rem;
+    margin: 0;
+    color: white;
+}
+
+.turma-nivel {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.turma-horarios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.dia-treino {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--primary-color);
+}
+
+.dia {
+    font-weight: 600;
+    color: white;
+}
+
+.horario {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.turma-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.turma-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted-text);
+}
+
+.turma-info i {
+    color: var(--primary-color);
+}
+
+.btn-turma-kids {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.btn-turma-kids:hover {
+    background: var(--gold);
+    color: #000;
+}
+
+.unidade-instrutor {
+    margin-top: 40px;
+    padding: 30px;
+    background: rgba(211, 47, 47, 0.05);
+    border-radius: var(--border-radius-lg);
+}
+
+.unidade-instrutor h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.instrutor-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.instrutor-foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+}
+
+.instrutor-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instrutor-detalhes h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.instrutor-experiencia {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.instrutor-detalhes>p {
+    color: var(--muted-text);
+    margin-bottom: 20px;
+}
+
+.btn-whatsapp-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    color: white;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition-normal);
+}
+
+.btn-whatsapp-small:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.unidade-info-extra {
+    margin-top: 40px;
+}
+
+.unidade-info-extra h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.info-card {
+    background: var(--dark-bg);
+    padding: 25px;
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+    transition: var(--transition-normal);
+    border: 1px solid var(--dark-border);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.info-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.info-card h4 {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.unidade-destaque {
+    margin-top: 40px;
+    padding: 30px;
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(10, 10, 10, 0.9));
+    border-radius: var(--border-radius-lg);
+    border: 1px solid var(--primary-color);
+}
+
+.unidade-destaque h3 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.destaque-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.destaque-texto h4 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.destaque-texto p {
+    color: var(--muted-text);
+    margin-bottom: 20px;
+}
+
+.destaque-texto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.destaque-texto li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: var(--muted-text);
+}
+
+.destaque-texto li i {
+    color: var(--primary-color);
+}
+
+.destaque-imagem {
+    width: 150px;
+    height: 150px;
+    background: rgba(211, 47, 47, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.destaque-imagem i {
     font-size: 4rem;
     color: var(--primary-color);
-    opacity: 0.5;
+}
+
+.unidade-separador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 50px 0;
+    color: var(--muted-text);
+}
+
+.separador-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--dark-card);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+}
+
+.separador-icon i {
+    color: var(--primary-color);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.unidades-cta {
+    background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(10, 10, 10, 0.9));
+    padding: 80px 0;
+    text-align: center;
+}
+
+.unidades-cta-content h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.unidades-cta-content>p {
+    font-size: 1.2rem;
+    color: var(--muted-text);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.unidades-cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* ============================================
@@ -1305,6 +1998,18 @@ img {
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .unidade-detalhada {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media (max-width: 1200px) {
     :root {
         --section-padding: 60px 0;
@@ -1374,6 +2079,52 @@ img {
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Página Unidades */
+    .unidade-mapa-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .fotos-secundarias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .destaque-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    /* Página Kids */
+    .kids-filosofia-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .kids-turmas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .kids-instrutor {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .beneficios-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Mini Grid das Unidades na Home */
+    .unidades-mini-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1414,6 +2165,91 @@ img {
     .footer-links {
         grid-template-columns: 1fr;
     }
+
+    /* Página Unidades */
+    .unidade-detalhada {
+        padding: 25px;
+    }
+    
+    .turma-horarios {
+        grid-template-columns: 1fr;
+    }
+    
+    .instrutor-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .instrutor-foto {
+        margin: 0 auto;
+    }
+    
+    .unidades-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-mapa, .btn-unidade-mini {
+        max-width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* Página Kids */
+    .kids-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .kids-hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .kids-hero-stats {
+        gap: 20px;
+    }
+    
+    .kids-hero-stats .stat-number {
+        font-size: 2rem;
+    }
+    
+    .faixas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .kids-unidade-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .btn-ver-unidade, .btn-agendar-aula {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .kids-cta-action {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    /* Home - Preview das Unidades */
+    .unidades-mini-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .hero-unidades-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-unidade-link {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1442,4 +2278,110 @@ img {
     .cta-content {
         padding: 30px;
     }
+
+    /* Página Unidades */
+    .unidades-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .fotos-secundarias {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .turma-card {
+        padding: 20px;
+    }
+    
+    .dia-treino {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    /* Página Kids */
+    .kids-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .kids-faixas .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-title h2{
+        text-align: center;
+    }
+    
+    .faixas-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .kids-missao {
+        grid-template-columns: 1fr;
+    }
+    
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .kids-unidade-card {
+        padding: 25px;
+    }
+    
+    .turma-titulo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    /* Ajustes gerais */
+    .section-header {
+        text-align: left;
+    }
+    
+    .section-description {
+        text-align: left;
+    }
+    
+    .unidade-separador .separador-texto {
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+    /* Ajustes finos */
+    .unidade-localizacao h2 {
+        font-size: 1.6rem;
+    }
+    
+    .unidade-turmas h3,
+    .unidade-instrutor h3,
+    .unidade-destaque h3 {
+        font-size: 1.4rem;
+    }
+    
+    .kids-filosofia-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .kids-unidade-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .dia-semana {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    
+    /* Botões */
+    .btn-whatsapp-small,
+    .btn-turma-kids,
+    .btn-agendar-aula {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+}
 }
