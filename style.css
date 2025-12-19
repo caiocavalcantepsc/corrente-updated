@@ -2620,6 +2620,8 @@ Página de faixas dos adultos
     background-color: #0f0f0f;
 }
 
+.sumir{}
+
 /* ============================================
    Responsividade pá lá
    ============================================ */
@@ -2641,8 +2643,16 @@ Página de faixas dos adultos
         --container-padding: 0 30px;
     }
 
+    .sumir{
+        display: none;
+    }
+
     .hero-title {
         font-size: 3rem;
+    }
+
+    .hero-scroll {
+        margin-left: 42%;
     }
 
     .sensei-content,
@@ -2662,6 +2672,13 @@ Página de faixas dos adultos
         font-size: 1.5rem;
     }
 
+    .sumir{
+        display: grid;
+    }
+
+    .manifesto-values {
+        justify-content: center;
+    }
 
     .sensei-content,
     .women-content,
@@ -2937,240 +2954,261 @@ Página de faixas dos adultos
         justify-content: center;
     }
 
-    @media (max-width: 768px) {
-        .faixas-hero h1 {
-            margin-top: 100px;
-            font-size: 2.5rem;
-        }
-
-        .faixas-hero p {
-            font-size: 1rem;
-        }
-
-        .sistema-section,
-        .graus-section,
-        .filosofia-section,
-        .cta-faixas {
-            padding: 60px 20px;
-        }
-
-        .sistema-title,
-        .graus-title {
-            font-size: 2rem;
-        }
-
-        .faixas-grid {
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        .graus-content {
-            grid-template-columns: 1fr;
-            gap: 40px;
-        }
-
-        .faixa-exemplo {
-            max-width: 300px;
-            margin: 0 auto;
-        }
-
-        .cta-container h2 {
-            font-size: 2rem;
-        }
-
-        .belt {
-            width: 200px;
-        }
+    .faixas-hero h1 {
+        margin-top: 100px;
+        font-size: 2.5rem;
     }
 
-    @media (max-width: 576px) {
-        .hero-title {
-            font-size: 1.7rem;
+    .faixas-hero p {
+        font-size: 1rem;
+    }
+
+    .sistema-section,
+    .graus-section,
+    .filosofia-section,
+    .cta-faixas {
+        padding: 60px 20px;
+    }
+
+    .sistema-title,
+    .graus-title {
+        font-size: 2rem;
+    }
+
+    .faixas-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .graus-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .faixa-exemplo {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .belt {
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.7rem;
+    }
+
+    .hero-scroll{
+        margin-left: 38%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .section-subtitle {
+        display: none;
+    }
+
+    .manifesto-lead {
+        font-size: 1.7rem;
+    }
+
+    .servicos-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .manifesto-values {
+        justify-content: center;
+    }
+
+    .sensei-img-wrapper img,
+    .women-image .img-cover {
+        height: 500px;
+    }
+
+    .cta-content {
+        padding: 30px;
+    }
+
+    .unidades-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .fotos-secundarias {
+        grid-template-columns: 1fr;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .turma-card {
+        padding: 20px;
+    }
+
+    .dia-treino {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .kids-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .kids-faixas .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-title h2 {
+        text-align: center;
+    }
+
+    .faixas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .kids-missao {
+        grid-template-columns: 1fr;
+    }
+
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kids-unidade-card {
+        padding: 25px;
+    }
+
+    .turma-titulo {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .section-header {
+        text-align: left;
+    }
+
+    .section-description {
+        text-align: center;
+    }
+
+    .unidade-separador .separador-texto {
+        font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+
+        .hero-title{
+            font-size: 1.4rem;
         }
 
-        .section-title {
-            font-size: 1.8rem;
+        .hero-subtitle{
+            font-size: 1.0rem;
         }
 
-        .section-subtitle {
-            display: none;
+        .hero-scroll{
+            margin-left: 30%;
         }
 
-        .manifesto-lead {
-            font-size: 1.7rem;
-        }
-
-        .servicos-grid,
-        .benefits-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .manifesto-values {
-            justify-content: center;
-        }
-
-        .sensei-img-wrapper img,
-        .women-image .img-cover {
-            height: 500px;
-        }
-
-        .cta-content {
-            padding: 30px;
-        }
-
-        .unidades-hero-content h1 {
-            font-size: 2rem;
-        }
-
-        .fotos-secundarias {
-            grid-template-columns: 1fr;
-        }
-
-        .info-cards {
-            grid-template-columns: 1fr;
-        }
-
-        .turma-card {
-            padding: 20px;
-        }
-
-        .dia-treino {
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-        }
-
-        .kids-hero-content h1 {
-            font-size: 2rem;
-        }
-
-        .kids-faixas .section-title {
+        .unidade-localizacao h2 {
             font-size: 1.6rem;
         }
 
-        .section-title h2 {
-            text-align: center;
+        .unidade-turmas h3,
+        .unidade-instrutor h3,
+        .unidade-destaque h3 {
+            font-size: 1.4rem;
         }
 
-        .faixas-container {
-            grid-template-columns: 1fr;
+        .kids-filosofia-text h2 {
+            font-size: 1.8rem;
         }
 
-        .kids-missao {
-            grid-template-columns: 1fr;
+        .kids-unidade-header h3 {
+            font-size: 1.5rem;
         }
 
-        .beneficios-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .kids-unidade-card {
-            padding: 25px;
-        }
-
-        .turma-titulo {
+        .dia-semana {
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
             align-items: flex-start;
         }
 
-        .section-header {
-            text-align: left;
-        }
-
-        .section-description {
-            text-align: center;
-        }
-
-        .unidade-separador .separador-texto {
+        .btn-whatsapp-small,
+        .btn-turma-kids,
+        .btn-agendar-aula {
+            padding: 12px 15px;
             font-size: 0.9rem;
         }
 
-        @media (max-width: 480px) {
 
-            .unidade-localizacao h2 {
-                font-size: 1.6rem;
-            }
-
-            .unidade-turmas h3,
-            .unidade-instrutor h3,
-            .unidade-destaque h3 {
-                font-size: 1.4rem;
-            }
-
-            .kids-filosofia-text h2 {
-                font-size: 1.8rem;
-            }
-
-            .kids-unidade-header h3 {
-                font-size: 1.5rem;
-            }
-
-            .dia-semana {
-                flex-direction: column;
-                gap: 5px;
-                align-items: flex-start;
-            }
-
-            .btn-whatsapp-small,
-            .btn-turma-kids,
-            .btn-agendar-aula {
-                padding: 12px 15px;
-                font-size: 0.9rem;
-            }
-
-
-            .else-section .section-title {
-                font-size: 1.8rem;
-            }
-
-            .else-section .section-description {
-                font-size: 1rem;
-            }
-
-            .else-card-title {
-                font-size: 1.3rem;
-            }
-
-            .else-card-desc {
-                font-size: 0.9rem;
-                min-height: auto;
-            }
+        .else-section .section-title {
+            font-size: 1.8rem;
         }
 
-        .else-card {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.6s forwards;
+        .else-section .section-description {
+            font-size: 1rem;
         }
 
-        .else-card:nth-child(1) {
-            animation-delay: 0.1s;
+        .else-card-title {
+            font-size: 1.3rem;
         }
 
-        .else-card:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .faixas-hero h1 {
-                font-size: 2rem;
-            }
-
-            .faixa-card {
-                padding: 20px;
-            }
-
-            .faixa-card h3 {
-                font-size: 1.5rem;
-            }
+        .else-card-desc {
+            font-size: 0.9rem;
+            min-height: auto;
         }
     }
+
+    .else-card {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.6s forwards;
+    }
+
+    .else-card:nth-child(1) {
+        animation-delay: 0.1s;
+    }
+
+    .else-card:nth-child(2) {
+        animation-delay: 0.2s;
+    }
+
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        .hero-scroll{
+            margin-left: 33%;
+        }
+    
+        .faixas-hero h1 {
+            font-size: 2rem;
+        }
+
+        .faixa-card {
+            padding: 20px;
+        }
+
+        .faixa-card h3 {
+            font-size: 1.5rem;
+        }
+    }
+
+    
 }
