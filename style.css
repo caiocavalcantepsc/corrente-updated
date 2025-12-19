@@ -87,8 +87,8 @@ img {
     display: block;
 }
 
-.retorno{
-    display:none;
+.retorno {
+    display: none;
 }
 
 .hidden {
@@ -693,11 +693,7 @@ img {
    ============================================ */
 
 .else-section {
-    /* padding: 100px 0;
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%,rgba(20, 20, 20, 0.95) 100%);
-    position: relative;
-    overflow: hidden; */
-    display:none;
+    display: none;
 }
 
 .else-section::before {
@@ -707,7 +703,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
+    background-image:
         radial-gradient(circle at 20% 80%, rgba(211, 47, 47, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
     pointer-events: none;
@@ -759,7 +755,6 @@ img {
     line-height: 1.6;
 }
 
-/* Grid */
 .else-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -773,14 +768,11 @@ img {
     display: block;
 }
 
-/* Card */
 .else-card {
     position: relative;
-    background: linear-gradient(
-        145deg,
-        rgba(255, 255, 255, 0.03) 0%,
-        rgba(255, 255, 255, 0.01) 100%
-    );
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, 0.03) 0%,
+            rgba(255, 255, 255, 0.01) 100%);
     border: 1px solid rgba(211, 47, 47, 0.2);
     border-radius: var(--border-radius-xl);
     padding: 40px 30px;
@@ -797,19 +789,17 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        45deg,
-        transparent 0%,
-        rgba(211, 47, 47, 0.05) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(45deg,
+            transparent 0%,
+            rgba(211, 47, 47, 0.05) 50%,
+            transparent 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .else-card:hover {
     transform: translateY(-10px) scale(1.02);
-    box-shadow: 
+    box-shadow:
         0 20px 40px rgba(211, 47, 47, 0.15),
         0 0 0 1px rgba(211, 47, 47, 0.3);
     border-color: var(--primary-color);
@@ -825,11 +815,9 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        45deg,
-        rgba(211, 47, 47, 0) 0%,
-        rgba(211, 47, 47, 0.1) 100%
-    );
+    background: linear-gradient(45deg,
+            rgba(211, 47, 47, 0) 0%,
+            rgba(211, 47, 47, 0.1) 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
@@ -844,7 +832,6 @@ img {
     text-align: center;
 }
 
-/* Ícone */
 .else-card-icon {
     width: 80px;
     height: 80px;
@@ -877,12 +864,15 @@ img {
 }
 
 @keyframes pulse {
-    0%, 100% { 
-        transform: scale(1); 
+
+    0%,
+    100% {
+        transform: scale(1);
         opacity: 0.5;
     }
-    50% { 
-        transform: scale(1.05); 
+
+    50% {
+        transform: scale(1.05);
         opacity: 0.3;
     }
 }
@@ -892,7 +882,6 @@ img {
     color: white;
 }
 
-/* Título e Texto */
 .else-card-title {
     font-size: 1.5rem;
     color: white;
@@ -908,7 +897,6 @@ img {
     min-height: 60px;
 }
 
-/* Call to Action */
 .else-card-cta {
     display: inline-flex;
     align-items: center;
@@ -1079,6 +1067,38 @@ img {
 
 .kids-faixas .section-title {
     text-align: center;
+}
+
+.container-belt {
+    display: grid;
+    /* background-color: #d32f2f; */
+    place-items: center;
+    width: 100%;
+    min-height: 100px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.belt {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background-color: rgba(179, 0, 0, 0);
+    width: 15%;
+    min-height: 50px;
+    border-radius: 10px;
+    transition: var(--transition-normal);
+    border: solid 2px rgb(255, 37, 37);
+    color: rgb(255, 37, 37);
+    font-size: 1.4rem;
+    padding: 0%;
+    gap: 4px;
+}
+
+.belt:hover {
+    /* box-shadow: rgb(255, 46, 14); */
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgb(255, 37, 37);
 }
 
 .faixas-container {
@@ -1979,9 +1999,6 @@ PÁGINA UNIDADES
     color: var(--muted-text);
 }
 
-/* ============================================
-   CTA SECTION
-   ============================================ */
 .cta {
     background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(10, 10, 10, 0.9)),
         url('cta-bg.jpg') center/cover no-repeat;
@@ -2241,7 +2258,7 @@ PÁGINA UNIDADES
 }
 
 /* ============================================
-   ANIMATIONS 
+   Animacoes 
    ============================================ */
 .fade-in {
     opacity: 0;
@@ -2254,8 +2271,357 @@ PÁGINA UNIDADES
     transform: translateY(0);
 }
 
+/* 
+Página de faixas dos adultos
+*/
+
+.faixas-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('https://imgs.search.brave.com/zkw3Z_i1tZPg6xLT02hueTCXPs265ue4zdWEoXluV5A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2VkaXRv/ci91cC83NDkwNzQv/dGFtYW5ob2FkZXF1/YWRvZGFmYWl4YWRl/aml1aml0c3VraW1v/bm9wYXJhaml1aml0/c3UuanBn');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.faixas-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.faixas-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    color: white;
+}
+
+.faixas-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.faixas-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.sistema-section {
+    padding: 100px 40px;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.sistema-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sistema-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sistema-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.85;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+.faixas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.faixa-card {
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 4px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+.faixa-card:hover {
+    transform: translateY(-5px);
+    border-color: #555;
+}
+
+.faixa-color {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.faixa-branca {
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    border: 1px solid #ccc;
+}
+
+.faixa-azul {
+    background: linear-gradient(to right, #0000ff, #0000cc);
+}
+
+.faixa-roxa {
+    background: linear-gradient(to right, #800080, #660066);
+}
+
+.faixa-marrom {
+    background: linear-gradient(to right, #8B4513, #654321);
+}
+
+.faixa-preta {
+    background: linear-gradient(to right, #000000, #070707);
+}
+
+.faixa-coral {
+    background: repeating-linear-gradient(to right,
+            #ff0000 0px,
+            #ff0000 25px,
+            #000000 25px,
+            #000000 50px);
+    height: 15px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+.tarja {
+    display: flex;
+    gap: 3px;
+    margin-top: 25px;
+    background-color: #000;
+    width: 15%;
+    height: 15px;
+    margin-bottom: 25px;
+    margin-left: 70%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px;
+    box-sizing: border-box;
+}
+
+.tracinho {
+
+    background-color: #ffffff;
+    width: 3px;
+    height: 15px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+
+.tarja-coral {
+    margin-top: 25px;
+    background-color: #000;
+    width: 15%;
+    height: 15px;
+    margin-bottom: 25px;
+    margin-left: 70%;
+}
+
+.tarja-fp {
+    margin-top: 25px;
+    background-color: #ff0000;
+    width: 15%;
+    height: 15px;
+    margin-bottom: 25px;
+    margin-left: 70%;
+}
+
+.faixa-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.faixa-tempo {
+    color: #00eaff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.faixa-descricao {
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.graus-info h4 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.graus-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.graus-info li {
+    padding: 5px 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #333;
+}
+
+.graus-info li:last-child {
+    border-bottom: none;
+}
+
+.graus-section {
+    padding: 100px 40px;
+    background: #000;
+}
+
+.graus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.graus-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.graus-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.graus-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.graus-text p {
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.graus-detalhes {
+    display: grid;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.detalhe-item h4 {
+    color: #00eaff;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+.detalhe-item p {
+    opacity: 0.8;
+    font-size: 0.95rem;
+}
+
+.graus-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faixa-exemplo {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.legenda {
+    opacity: 0.7;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.filosofia-section {
+    padding: 100px 40px;
+    background: #0a0a0a;
+    text-align: center;
+}
+
+.filosofia-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.filosofia-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.filosofia-text {
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.filosofia-destaque {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #00eaff;
+    margin: 40px 0 10px;
+    padding: 20px;
+    border-left: 3px solid #00eaff;
+}
+
+.cta-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.cta-container p {
+    opacity: 0.85;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.footer-adultos-page {
+    display: grid;
+    place-items: center;
+    padding: 30px 0;
+    background-color: #0f0f0f;
+}
+
 /* ============================================
-   RESPONSIVE DESIGN
+   Responsividade pá lá
    ============================================ */
 @media (min-width: 1600px) {
     .container {
@@ -2407,7 +2773,8 @@ PÁGINA UNIDADES
     }
 
     .hero-scroll {
-        display: none;
+        /* display: none; */
+        margin-left: 33%;
     }
 
     .hero-cta {
@@ -2436,49 +2803,49 @@ PÁGINA UNIDADES
     }
 
     .else-section {
-        display: block !important; 
+        display: block !important;
         padding: 70px 0;
     }
 
-    .else-section h1{
+    .else-section h1 {
         text-align: center;
         margin-bottom: 70px;
-        color: rgb(213, 0, 0);
+        color: #d32f2f;
     }
-    
+
     .else-section .section-title {
         font-size: 2rem;
     }
-    
+
     .else-grid {
         display: grid !important;
         grid-template-columns: 1fr;
         max-width: 400px;
     }
-    
+
     .else-card {
         padding: 30px 25px;
     }
-    
+
     .else-card-icon {
         width: 70px;
         height: 70px;
         margin-bottom: 20px;
     }
-    
+
     .else-card-icon i {
         font-size: 1.8rem;
     }
 
-    .retorno{
+    .retorno {
         font-size: 0.5rem;
     }
 
-    .img-cover{
-        display:none;
+    .img-cover {
+        display: none;
     }
 
-    .foto-principal{
+    .foto-principal {
         height: 90%;
     }
 
@@ -2569,179 +2936,241 @@ PÁGINA UNIDADES
         max-width: 300px;
         justify-content: center;
     }
-}
 
-@media (max-width: 576px) {
-    .hero-title {
-        font-size: 1.7rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
-    }
-
-    .section-subtitle {
-        display: none;
-    }
-
-    .manifesto-lead {
-        font-size: 1.7rem;
-    }
-
-    .servicos-grid,
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .manifesto-values {
-        justify-content: center;
-    }
-
-    .sensei-img-wrapper img,
-    .women-image .img-cover {
-        height: 500px;
-    }
-
-    .cta-content {
-        padding: 30px;
-    }
-
-    .unidades-hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .fotos-secundarias {
-        grid-template-columns: 1fr;
-    }
-
-    .info-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .turma-card {
-        padding: 20px;
-    }
-
-    .dia-treino {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
-    .kids-hero-content h1 {
-        font-size: 2rem;
-    }
-
-    .kids-faixas .section-title {
-        font-size: 1.6rem;
-    }
-
-    .section-title h2 {
-        text-align: center;
-    }
-
-    .faixas-container {
-        grid-template-columns: 1fr;
-    }
-
-    .kids-missao {
-        grid-template-columns: 1fr;
-    }
-
-    .beneficios-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .kids-unidade-card {
-        padding: 25px;
-    }
-
-    .turma-titulo {
-        flex-direction: column;
-        gap: 10px;
-        align-items: flex-start;
-    }
-
-    .section-header {
-        text-align: left;
-    }
-
-    .section-description {
-        text-align: left;
-    }
-
-    .unidade-separador .separador-texto {
-        font-size: 0.9rem;
-    }
-
-@media (max-width: 480px) {
-
-        .unidade-localizacao h2 {
-            font-size: 1.6rem;
+    @media (max-width: 768px) {
+        .faixas-hero h1 {
+            margin-top: 100px;
+            font-size: 2.5rem;
         }
 
-        .unidade-turmas h3,
-        .unidade-instrutor h3,
-        .unidade-destaque h3 {
-            font-size: 1.4rem;
+        .faixas-hero p {
+            font-size: 1rem;
         }
 
-        .kids-filosofia-text h2 {
+        .sistema-section,
+        .graus-section,
+        .filosofia-section,
+        .cta-faixas {
+            padding: 60px 20px;
+        }
+
+        .sistema-title,
+        .graus-title {
+            font-size: 2rem;
+        }
+
+        .faixas-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .graus-content {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .faixa-exemplo {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .cta-container h2 {
+            font-size: 2rem;
+        }
+
+        .belt {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-title {
+            font-size: 1.7rem;
+        }
+
+        .section-title {
             font-size: 1.8rem;
         }
 
-        .kids-unidade-header h3 {
-            font-size: 1.5rem;
+        .section-subtitle {
+            display: none;
         }
 
-        .dia-semana {
+        .manifesto-lead {
+            font-size: 1.7rem;
+        }
+
+        .servicos-grid,
+        .benefits-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .manifesto-values {
+            justify-content: center;
+        }
+
+        .sensei-img-wrapper img,
+        .women-image .img-cover {
+            height: 500px;
+        }
+
+        .cta-content {
+            padding: 30px;
+        }
+
+        .unidades-hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .fotos-secundarias {
+            grid-template-columns: 1fr;
+        }
+
+        .info-cards {
+            grid-template-columns: 1fr;
+        }
+
+        .turma-card {
+            padding: 20px;
+        }
+
+        .dia-treino {
             flex-direction: column;
-            gap: 5px;
+            gap: 10px;
             align-items: flex-start;
         }
 
-        .btn-whatsapp-small,
-        .btn-turma-kids,
-        .btn-agendar-aula {
-            padding: 12px 15px;
+        .kids-hero-content h1 {
+            font-size: 2rem;
+        }
+
+        .kids-faixas .section-title {
+            font-size: 1.6rem;
+        }
+
+        .section-title h2 {
+            text-align: center;
+        }
+
+        .faixas-container {
+            grid-template-columns: 1fr;
+        }
+
+        .kids-missao {
+            grid-template-columns: 1fr;
+        }
+
+        .beneficios-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .kids-unidade-card {
+            padding: 25px;
+        }
+
+        .turma-titulo {
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .section-header {
+            text-align: left;
+        }
+
+        .section-description {
+            text-align: center;
+        }
+
+        .unidade-separador .separador-texto {
             font-size: 0.9rem;
         }
 
+        @media (max-width: 480px) {
 
-        .else-section .section-title {
-        font-size: 1.8rem;
+            .unidade-localizacao h2 {
+                font-size: 1.6rem;
+            }
+
+            .unidade-turmas h3,
+            .unidade-instrutor h3,
+            .unidade-destaque h3 {
+                font-size: 1.4rem;
+            }
+
+            .kids-filosofia-text h2 {
+                font-size: 1.8rem;
+            }
+
+            .kids-unidade-header h3 {
+                font-size: 1.5rem;
+            }
+
+            .dia-semana {
+                flex-direction: column;
+                gap: 5px;
+                align-items: flex-start;
+            }
+
+            .btn-whatsapp-small,
+            .btn-turma-kids,
+            .btn-agendar-aula {
+                padding: 12px 15px;
+                font-size: 0.9rem;
+            }
+
+
+            .else-section .section-title {
+                font-size: 1.8rem;
+            }
+
+            .else-section .section-description {
+                font-size: 1rem;
+            }
+
+            .else-card-title {
+                font-size: 1.3rem;
+            }
+
+            .else-card-desc {
+                font-size: 0.9rem;
+                min-height: auto;
+            }
+        }
+
+        .else-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s forwards;
+        }
+
+        .else-card:nth-child(1) {
+            animation-delay: 0.1s;
+        }
+
+        .else-card:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .faixas-hero h1 {
+                font-size: 2rem;
+            }
+
+            .faixa-card {
+                padding: 20px;
+            }
+
+            .faixa-card h3 {
+                font-size: 1.5rem;
+            }
+        }
     }
-    
-    .else-section .section-description {
-        font-size: 1rem;
-    }
-    
-    .else-card-title {
-        font-size: 1.3rem;
-    }
-    
-    .else-card-desc {
-        font-size: 0.9rem;
-        min-height: auto;
-    }
-}
-
-/* Efeito de entrada */
-.else-card {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.6s forwards;
-}
-
-.else-card:nth-child(1) { animation-delay: 0.1s; }
-.else-card:nth-child(2) { animation-delay: 0.2s; }
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
 }
