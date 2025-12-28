@@ -289,7 +289,7 @@ img {
     align-items: center;
     position: relative;
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
-        url('correntebg.png') center/cover no-repeat;
+        url('media/correntebg.png') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -933,7 +933,7 @@ img {
 
 .kids-hero {
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
-        url('kids-bg.jpg') center/cover no-repeat;
+        url('media/kids-bg.jpg') center/cover no-repeat;
     padding: 120px 0 80px;
     text-align: center;
     margin-top: 80px;
@@ -1364,7 +1364,7 @@ PÁGINA UNIDADES
 
 .unidades-hero {
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
-        url('correntebg.png') center/cover no-repeat;
+        url('media/correntebg.png') center/cover no-repeat;
     padding: 120px 0 80px;
     text-align: center;
     margin-top: 80px;
@@ -1903,7 +1903,7 @@ PÁGINA UNIDADES
    ============================================ */
 .women {
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
-        url('women-bg.jpg') center/cover no-repeat;
+        url('media/women-bg.jpg') center/cover no-repeat;
 }
 
 .women-content {
@@ -2001,7 +2001,7 @@ PÁGINA UNIDADES
 
 .cta {
     background: linear-gradient(135deg, rgba(211, 47, 47, 0.1), rgba(10, 10, 10, 0.9)),
-        url('cta-bg.jpg') center/cover no-repeat;
+        url('media/cta-bg.jpg') center/cover no-repeat;
     position: relative;
 }
 
@@ -2619,9 +2619,6 @@ Página de faixas dos adultos
     padding: 30px 0;
     background-color: #0f0f0f;
 }
-
-.sumir{}
-
 /* ============================================
    Responsividade pá lá
    ============================================ */
