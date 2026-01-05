@@ -165,7 +165,7 @@ img {
    HEADER & NAVIGATION
    ============================================ */
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -221,7 +221,7 @@ img {
 }
 
 .nav-menu {
-    display: flex;
+    display:flex;
     gap: 32px;
     align-items: center;
 }
