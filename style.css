@@ -94,14 +94,14 @@ img {
 .hidden {
     opacity: 0;
     filter: blur(5px);
-    transition: all .4s;
+    transition: all .7s;
     transform: translateX(-100%);
 }
 
 .hidden-blurless {
     opacity: 0;
     filter: blur(5px);
-    transition: all .4s;
+    transition: all .7s;
 }
 
 .show {
@@ -261,7 +261,7 @@ img {
     background: var(--primary-color);
     color: white;
     padding: 10px 24px;
-    border-radius: var(--border-radius);
+    border-radius: 5px;
     font-weight: 600;
 }
 
@@ -309,23 +309,25 @@ img {
     padding: 40px 0;
 }
 
-.hero-quote {
-    margin-bottom: 60px;
-}
+/* .hero-quote {
+    margin-bottom: 20px;
+} */
 
 .hero-title {
-    font-size: 2.0rem;
+    font-size: 3.0rem;
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.1;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Oswald', sans-serif;
 }
 
 .hero-author {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--primary-color);
     font-style: italic;
     opacity: 0.9;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-cta {
@@ -381,8 +383,16 @@ img {
 }
 
 .section-header {
-    text-align: center;
     margin-bottom: 60px;
+    text-align: center;
+}
+
+.section-header-primeira{
+    margin-bottom: 60px;
+}
+
+.section-header-primeira h2{
+    text-align: left;
 }
 
 .section-subtitle {
@@ -508,7 +518,7 @@ img {
 
 .sensei-img-wrapper {
     position: relative;
-    border-radius: var(--border-radius-xl);
+    border-radius: 5px;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
 }
@@ -685,6 +695,10 @@ img {
     color: var(--muted-text);
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+.foto-mobile{
+    display: none;
 }
 
 
@@ -2774,6 +2788,20 @@ Página de faixas dos adultos
         --container-padding: 0 20px;
     }
 
+    .foto-mobile{
+        display: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    .manifesto-values{
+        display: none;
+    }
+
+    .header{
+        display: none;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -2782,7 +2810,16 @@ Página de faixas dos adultos
         font-size: 1.5rem;
     }
 
-    .section-header {
+    .section-header-primeira {
+        margin-bottom: 50px;
+        text-align: left;
+        display: flex;
+        /* background-color: red; */
+        gap: 10px;
+        align-items: center;
+    }
+
+    .section-header{
         text-align: center;
     }
 
