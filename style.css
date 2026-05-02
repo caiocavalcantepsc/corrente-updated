@@ -3651,3 +3651,9 @@ Página de faixas dos adultos
         padding: 8px 10px;
     }
 }
+
+@media (max-width: 350px){
+    .hero-scroll{
+        margin-left: 26%;
+    }
+}
