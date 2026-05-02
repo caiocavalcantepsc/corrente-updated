@@ -154,6 +154,7 @@ img {
     background: linear-gradient(135deg, #25d366, #128c7e);
     color: white;
     box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    text-align: center;
 }
 
 .btn-whatsapp:hover {
@@ -222,18 +223,20 @@ img {
 
 .nav-menu {
     display:flex;
-    gap: 32px;
+    gap: 22px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-link {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--muted-text);
     position: relative;
     padding: 8px 0;
+    text-align: center;
 }
 
 .nav-link:hover,
@@ -260,9 +263,10 @@ img {
 .cta-nav {
     background: var(--primary-color);
     color: white;
-    padding: 10px 24px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-weight: 600;
+    max-width: 200px;
 }
 
 .cta-nav:hover {
@@ -659,16 +663,6 @@ img {
     transition: var(--transition-normal);
 }
 
-.servico-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--primary-color);
-}
-
-.servico-card:hover::before {
-    opacity: 1;
-}
-
 .servico-icon {
     width: 70px;
     height: 70px;
@@ -948,10 +942,12 @@ img {
 .kids-hero {
     background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)),
         url('media/kids-bg.jpg') center/cover no-repeat;
-    padding: 120px 0 80px;
+    padding: 120px 0 120px;
     text-align: center;
-    margin-top: 80px;
     position: relative;
+    min-height: 80vh;
+    display: grid;
+    place-items: center;
 }
 
 .kids-hero-content h1 {
@@ -995,7 +991,7 @@ img {
 
 .kids-filosofia {
     padding: 80px 0;
-    background: var(--dark-card);
+    background: var(--dark-bg);
 }
 
 .kids-filosofia-content {
@@ -1020,9 +1016,50 @@ img {
 
 .kids-missao {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 20px;
 }
+
+.kids-beneficios{
+    display: grid;
+    place-items: center;
+    padding: 30px;
+    min-height: 90vh;
+    justify-content: center;
+}
+
+.kids-beneficios-content{   
+    gap: 60px;
+    align-items: center;
+}
+
+.kids-beneficios-text{
+    text-align: center;
+    font-size: 2.0rem;
+    color: white;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.titulo-beneficios-kids{
+    text-align: center;
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 20px;
+    display: inline;
+}
+
+.cor-amarela{
+    color: #ffd700;
+}
+
+.kids-beneficios-text p{
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
 
 .missao-item {
     background: var(--dark-bg);
@@ -1191,10 +1228,9 @@ img {
 
 .kids-unidade-card {
     background: var(--dark-bg);
-    padding: 40px;
+    padding: 20px;
     border-radius: var(--border-radius-xl);
     margin-bottom: 50px;
-    border: 1px solid var(--dark-border);
     box-shadow: var(--shadow-md);
 }
 
@@ -1245,7 +1281,6 @@ img {
     background: rgba(255, 255, 255, 0.03);
     padding: 30px;
     border-radius: var(--border-radius-lg);
-    border: 1px solid rgba(255, 215, 0, 0.1);
 }
 
 .turma-titulo {
@@ -1912,6 +1947,11 @@ PÁGINA UNIDADES
     flex-wrap: wrap;
 }
 
+.cta-beneficios{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 /* ============================================
    WOMEN SECTION
    ============================================ */
@@ -1982,7 +2022,7 @@ PÁGINA UNIDADES
 
 .women-stats {
     position: absolute;
-    bottom: 30px;
+    top: 30px;
     left: 30px;
     right: 30px;
     display: flex;
@@ -1991,11 +2031,11 @@ PÁGINA UNIDADES
 
 .women-stat {
     flex: 1;
-    background: rgba(10, 10, 10, 0.9);
-    padding: 20px;
+    background: rgba(10, 10, 10, 0.509);
+    padding: 10px;
     border-radius: var(--border-radius);
     text-align: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 .women-stat .stat-number {
@@ -2032,15 +2072,17 @@ PÁGINA UNIDADES
 }
 
 .cta-text h2 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: white;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .cta-text>p {
     font-size: 1.1rem;
     color: var(--muted-text);
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .cta-features {
@@ -2069,7 +2111,7 @@ PÁGINA UNIDADES
 }
 
 .btn-whatsapp {
-    width: 100%;
+    width: auto;
     justify-content: center;
     padding: 16px 32px;
     font-size: 1rem;
@@ -2633,6 +2675,28 @@ Página de faixas dos adultos
     padding: 30px 0;
     background-color: #0f0f0f;
 }
+
+.else-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+.else-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.else-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 /* ============================================
    Responsividade pá lá
    ============================================ */
@@ -2772,10 +2836,6 @@ Página de faixas dos adultos
         text-align: center;
     }
 
-    .beneficios-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .unidades-mini-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -2889,6 +2949,7 @@ Página de faixas dos adultos
     }
 
     .retorno {
+        display: flex !important;
         font-size: 0.5rem;
     }
 
@@ -2936,6 +2997,10 @@ Página de faixas dos adultos
 
     .kids-hero-content h1 {
         font-size: 2.5rem;
+    }
+
+    .kids-hero{
+        min-height: 100vh;
     }
 
     .kids-hero-subtitle {
@@ -3031,6 +3096,126 @@ Página de faixas dos adultos
     .belt {
         width: 200px;
     }
+
+    /* Responsividade para a seção kids-beneficios */
+    .kids-beneficios {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .kids-beneficios-text {
+        font-size: 1.8rem;
+    }
+
+    .titulo-beneficios-kids {
+        font-size: 1.8rem;
+    }
+
+    .kids-beneficios-text p {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .show-return{
+        display: flex;
+    }
+
+    /* ============================================
+       RESPONSIVIDADE PARA SEÇÃO KIDS-UNIDADES
+       ============================================ */
+
+    .kids-unidade-card {
+        padding: 20px;
+        margin-bottom: 0px;
+    }
+
+    .kids-unidade-header h3 {
+        font-size: 1.3rem;
+        word-break: break-word;
+    }
+
+    .kids-turma {
+        padding: 20px;
+    }
+
+    .turma-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .turma-titulo h4 {
+        font-size: 1.1rem;
+    }
+
+    .turma-idade {
+        font-size: 0.8rem;
+        padding: 4px 12px;
+    }
+
+    .dia-semana {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 12px;
+    }
+
+    .dia {
+        font-size: 0.9rem;
+    }
+
+    .horario {
+        font-size: 0.85rem;
+    }
+
+    .kids-instrutor {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .instrutor-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .instrutor-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .instrutor-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    .instrutor-info div {
+        text-align: center;
+    }
+
+    .instrutor-info h5 {
+        font-size: 1rem;
+    }
+
+    .instrutor-info p {
+        font-size: 0.85rem;
+    }
+
+    .btn-agendar-aula {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 15px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+        justify-content: center;
+    }
+
+    .kids-turmas-container {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -3098,6 +3283,10 @@ Página de faixas dos adultos
         font-size: 2rem;
     }
 
+    .kids-hero{
+        min-height: 70vh;
+    }
+
     .kids-faixas .section-title {
         font-size: 1.6rem;
     }
@@ -3111,10 +3300,6 @@ Página de faixas dos adultos
     }
 
     .kids-missao {
-        grid-template-columns: 1fr;
-    }
-
-    .beneficios-grid {
         grid-template-columns: 1fr;
     }
 
@@ -3140,109 +3325,329 @@ Página de faixas dos adultos
         font-size: 0.9rem;
     }
 
-    @media (max-width: 480px) {
-
-        .hero-title{
-            font-size: 1.4rem;
-        }
-
-        .hero-subtitle{
-            font-size: 1.0rem;
-        }
-
-        .hero-scroll{
-            margin-left: 30%;
-        }
-
-        .unidade-localizacao h2 {
-            font-size: 1.6rem;
-        }
-
-        .unidade-turmas h3,
-        .unidade-instrutor h3,
-        .unidade-destaque h3 {
-            font-size: 1.4rem;
-        }
-
-        .kids-filosofia-text h2 {
-            font-size: 1.8rem;
-        }
-
-        .kids-unidade-header h3 {
-            font-size: 1.5rem;
-        }
-
-        .dia-semana {
-            flex-direction: column;
-            gap: 5px;
-            align-items: flex-start;
-        }
-
-        .btn-whatsapp-small,
-        .btn-turma-kids,
-        .btn-agendar-aula {
-            padding: 12px 15px;
-            font-size: 0.9rem;
-        }
-
-
-        .else-section .section-title {
-            font-size: 1.8rem;
-        }
-
-        .else-section .section-description {
-            font-size: 1rem;
-        }
-
-        .else-card-title {
-            font-size: 1.3rem;
-        }
-
-        .else-card-desc {
-            font-size: 0.9rem;
-            min-height: auto;
-        }
+    /* Responsividade para a seção kids-beneficios */
+    .kids-beneficios {
+        padding: 15px;
     }
 
-    .else-card {
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeInUp 0.6s forwards;
+    .kids-beneficios-text {
+        font-size: 1.5rem;
     }
 
-    .else-card:nth-child(1) {
-        animation-delay: 0.1s;
+    .titulo-beneficios-kids {
+        font-size: 1.5rem;
     }
 
-    .else-card:nth-child(2) {
-        animation-delay: 0.2s;
+    .kids-beneficios-text p {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
     }
 
-    @keyframes fadeInUp {
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    /* ============================================
+       RESPONSIVIDADE PARA SEÇÃO KIDS-UNIDADES (576px)
+       ============================================ */
+    .kids-unidade-card {
+        padding: 15px;
     }
 
-    @media (max-width: 480px) {
-
-        .hero-scroll{
-            margin-left: 33%;
-        }
-    
-        .faixas-hero h1 {
-            font-size: 2rem;
-        }
-
-        .faixa-card {
-            padding: 20px;
-        }
-
-        .faixa-card h3 {
-            font-size: 1.5rem;
-        }
+    .kids-unidade-header h3 {
+        font-size: 1.2rem;
     }
 
-    
+    .kids-unidade-header h3 i {
+        font-size: 1rem;
+    }
+
+    .btn-ver-unidade {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .kids-turma {
+        padding: 15px;
+    }
+
+    .turma-titulo h4 {
+        font-size: 1rem;
+    }
+
+    .dia-semana {
+        padding: 8px 10px;
+    }
+
+    .dia {
+        font-size: 0.85rem;
+    }
+
+    .horario {
+        font-size: 0.8rem;
+    }
+
+    .btn-agendar-aula {
+        max-width: 100%;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+    }
+
+    .kids-turmas-container {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-title{
+        font-size: 1.4rem;
+    }
+
+    .hero-subtitle{
+        font-size: 1.0rem;
+    }
+
+    .hero-scroll{
+        margin-left: 30%;
+    }
+
+    .unidade-localizacao h2 {
+        font-size: 1.6rem;
+    }
+
+    .unidade-turmas h3,
+    .unidade-instrutor h3,
+    .unidade-destaque h3 {
+        font-size: 1.4rem;
+    }
+
+    .retorno {
+        display: flex !important;
+        font-size: 0.5rem;
+    }
+
+    .kids-filosofia-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .kids-unidade-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .dia-semana {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .kids-hero{
+        min-height: 70vh;
+    }
+
+    .btn-whatsapp-small,
+    .btn-turma-kids,
+    .btn-agendar-aula {
+        padding: 12px 15px;
+        font-size: 0.9rem;
+    }
+
+
+    .else-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .else-section .section-description {
+        font-size: 1rem;
+    }
+
+    .else-card-title {
+        font-size: 1.3rem;
+    }
+
+    .else-card-desc {
+        font-size: 0.9rem;
+        min-height: auto;
+    }
+
+    /* Responsividade para a seção kids-beneficios */
+    .kids-beneficios {
+        padding: 10px;
+    }
+
+    .kids-beneficios-text {
+        font-size: 1.3rem;
+    }
+
+    .titulo-beneficios-kids {
+        font-size: 1.3rem;
+    }
+
+    .kids-beneficios-text p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    /* ============================================
+       RESPONSIVIDADE PARA SEÇÃO KIDS-UNIDADES (480px)
+       ============================================ */
+    .kids-unidades .section-title {
+        font-size: 1.5rem;
+    }
+
+    .kids-unidades .section-description {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .kids-unidade-card {
+        padding: 12px;
+    }
+
+    .kids-unidade-header {
+        gap: 10px;
+    }
+
+    .kids-unidade-header h3 {
+        font-size: 1.1rem;
+    }
+
+    .kids-turma {
+        padding: 12px;
+    }
+
+    .turma-titulo {
+        gap: 8px;
+    }
+
+    .turma-titulo h4 {
+        font-size: 0.95rem;
+    }
+
+    .turma-idade {
+        font-size: 0.7rem;
+        padding: 3px 10px;
+    }
+
+    .turma-horario {
+        gap: 10px;
+    }
+
+    .dia-semana {
+        padding: 6px 8px;
+    }
+
+    .dia {
+        font-size: 0.8rem;
+    }
+
+    .horario {
+        font-size: 0.75rem;
+    }
+
+    .kids-instrutor {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .instrutor-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .btn-agendar-aula {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .btn-agendar-aula i {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .hero-scroll{
+        margin-left: 33%;
+    }
+
+    .faixas-hero h1 {
+        font-size: 2rem;
+    }
+
+    .faixa-card {
+        padding: 20px;
+    }
+
+    .faixa-card h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Responsividade para a seção kids-beneficios */
+    .kids-beneficios {
+        padding: 5px;
+    }
+
+    .kids-beneficios-text {
+        font-size: 1.2rem;
+    }
+
+    .titulo-beneficios-kids {
+        font-size: 1.2rem;
+    }
+
+    .kids-beneficios-text p {
+        font-size: 0.85rem;
+        padding: 0 5px;
+    }
+
+    /* ============================================
+       RESPONSIVIDADE FINAL PARA SEÇÃO KIDS-UNIDADES
+       ============================================ */
+    .kids-unidade-card {
+        padding: 10px;
+    }
+
+    .kids-unidade-header h3 {
+        font-size: 1rem;
+    }
+
+    .btn-ver-unidade {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+
+    .kids-turma {
+        padding: 10px;
+    }
+
+    .turma-titulo h4 {
+        font-size: 0.9rem;
+    }
+
+    .turma-idade {
+        font-size: 0.65rem;
+    }
+
+    .dia {
+        font-size: 0.75rem;
+    }
+
+    .horario {
+        font-size: 0.7rem;
+    }
+
+    .instrutor-info h5 {
+        font-size: 0.9rem;
+    }
+
+    .instrutor-info p {
+        font-size: 0.75rem;
+    }
+
+    .btn-agendar-aula {
+        font-size: 0.75rem;
+        padding: 8px 10px;
+    }
 }
